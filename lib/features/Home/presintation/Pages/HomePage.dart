@@ -5,7 +5,7 @@ import 'package:shelhop_flower_admin/core/widgets/CustomPageRoute.dart';
 import 'package:shelhop_flower_admin/features/Admins/presintation/Pages/Admins_page.dart';
 import 'package:shelhop_flower_admin/features/Categories/presintation/Pages/Categories_page.dart';
 import 'package:shelhop_flower_admin/features/Orders/presintation/Pages/Orders_page.dart';
-import 'package:shelhop_flower_admin/features/Prodects/presintation/Pages/Prodect_page.dart';
+import 'package:shelhop_flower_admin/features/Prodects/presintation/Pages/Prodect_Categories_page.dart';
 
 import '../Widgets/Card_Home.dart';
 
@@ -59,7 +59,13 @@ class _HomePageState extends State<HomePage> {
                   Navigator.push(
                       context,
                       CustomPageRoute(
-                          child:Prodect_page()));
+                          child:Prodect_Categories_page()));
+                },),
+                Card_Home(image: 'assets/images/admins.png',name: 'العروض',ontap: (){
+                  Navigator.push(
+                      context,
+                      CustomPageRoute(
+                          child:Admins_page()));
                 },),
                 Card_Home(image: 'assets/images/admins.png',name: 'المدراء',ontap: (){
                   Navigator.push(
@@ -67,6 +73,7 @@ class _HomePageState extends State<HomePage> {
                       CustomPageRoute(
                           child:Admins_page()));
                 },),
+
 
 
 
